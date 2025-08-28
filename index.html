@@ -147,6 +147,11 @@
             height: auto;
             max-height: 500px;
             object-fit: cover;
+            display: block;
+        }
+        
+        .carousel-item {
+            position: relative;
         }
         
         .carousel-caption {
@@ -156,6 +161,11 @@
             border-radius: 10px;
             margin: 20px;
             backdrop-filter: blur(5px);
+            position: absolute;
+            bottom: 20px;
+            left: 20px;
+            right: 20px;
+            z-index: 10;
         }
         
         .carousel-caption h5 {
@@ -235,6 +245,42 @@
             
             .phone {
                 font-size: 1.4em;
+            }
+            
+            .carousel-caption {
+                padding: 15px;
+                margin: 10px;
+                bottom: 10px;
+                left: 10px;
+                right: 10px;
+            }
+            
+            .carousel-caption h5 {
+                font-size: 1.2em;
+                margin-bottom: 5px;
+            }
+            
+            .carousel-caption p {
+                font-size: 0.9em;
+            }
+        }
+        
+        @media (max-width: 480px) {
+            .carousel-caption {
+                padding: 10px;
+                margin: 5px;
+                bottom: 5px;
+                left: 5px;
+                right: 5px;
+            }
+            
+            .carousel-caption h5 {
+                font-size: 1em;
+                margin-bottom: 3px;
+            }
+            
+            .carousel-caption p {
+                font-size: 0.8em;
             }
         }
     </style>
